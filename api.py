@@ -54,7 +54,7 @@ def Run():
 
     #Write Json File
     f = open("data.json", "w")
-    f.write(data.today())
+    f.write(12)
     f.close()
 
 num = 0

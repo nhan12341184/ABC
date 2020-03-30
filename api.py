@@ -57,7 +57,7 @@ def Run():
     localtime = time.localtime(time.time())
     #Write Json File
     f = open("data.json", "w")
-    f.write(localtime))
+    f.write(localtime())
     f.close()
 
 num = 0

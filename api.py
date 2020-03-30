@@ -2,10 +2,12 @@ import os
 import json
 import time
 import datetime
+#!/usr/bin/python
 import requests
 from bs4 import BeautifulSoup
 from operator import itemgetter
 from datetime import date
+import time;
 
 port = int(os.environ.get('PORT', 80))
 
@@ -52,9 +54,10 @@ def Run():
 
     #data_done = json.dumps(covid_19_data_sorted)
 
+    localtime = time.localtime(time.time())
     #Write Json File
     f = open("data.json", "w")
-    f.write(12)
+    f.write(localtime))
     f.close()
 
 num = 0
@@ -64,4 +67,4 @@ while True:
     print("Updated:",num,"-",tmp_time.strftime("%H:%M:%S %Y-%m-%d"))
     Run()
     print("-----------------------------------------------------------")
-    time.sleep(5)
+    time.sleep(1)
